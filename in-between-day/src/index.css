@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; }
+body { background: #101528; color: #f3eefb; font-family: 'Instrument Sans', system-ui, sans-serif; overflow-x: hidden; }
+body::after { content:''; position:fixed; inset:0; pointer-events:none; opacity:.07; z-index:50;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>"); }
+:focus-visible { outline: 2px solid #9fd8ff; outline-offset: 4px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
